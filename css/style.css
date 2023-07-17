@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Iranian Sans";
+  font-weight: 250;
+  src: url("../font/Iranian Sans.ttf");
+}
+body {
+  font-family: "Iranian Sans" !important;
+  font-weight: 300;
+  text-align: right;
+  direction: rtl;
+  font-size: 12px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
+  font-family: "Iranian Sans" !important;
+}
+
+/*scroll setting*/
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #afb6af;
+}
+
+/*top header*/
+.top-header-largeScreen {
+  box-shadow: 0px 2px 5px 0px rgb(0, 0, 0, 0.16);
+  position: fixed;
+  z-index: 1;
+  background: #fff;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.top-header-largeScreen .search-box {
+  position: relative;
+  padding: 1rem;
+}
+.top-header-largeScreen .logo {
+  vertical-align: middle;
+}
+.top-header-largeScreen .search-box .form-group {
+  margin-bottom: 0px;
+}
+.top-header-largeScreen .login-register-box,
+.banner,
+.logo {
+  padding: 1rem;
+  text-align: center;
+}
+.top-header-largeScreen .search-box input {
+  text-align: center;
+  text-align: center;
+  border-radius: 30px;
+  background: #f0f0f1;
+  font-size: 12px;
+  padding: 20px;
+}
+.top-header-largeScreen .search-box img {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+.top-header-largeScreen .login {
+  border-radius: 0px 20px 20px 0px;
+  padding: 12px 30px;
+  font-size: 12px;
+  background-color: #46b2f0;
+  position: relative;
+}
+.top-header-largeScreen .register {
+  border-radius: 20px 0px 0px 20px;
+  padding: 12px 35px;
+  font-size: 12px;
+  background-color: #46b2f0;
+}
+.top-header-largeScreen .login-register-box .login:before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  right: 92%;
+  border-radius: 50%;
+}
+.top-header-largeScreen .login:hover {
+  box-shadow: 0px 2px 5px 0px rgb(0, 0, 0, 0.16);
+  background-color: #1e88e5;
+}
+.top-header-largeScreen .register:hover {
+  box-shadow: 0px 2px 5px 0px rgb(0, 0, 0, 0.16);
+  background-color: #1e88e5;
+}
+.top-header-largeScreen .navbar .nav-link {
+  color: black;
+  padding-right: 1rem;
+  transition: 0.2s all;
+}
+.top-header-largeScreen .navbar .nav-link:hover {
+  color: #46b2f0;
+}
+.top-header-largeScreen .course {
+  position: relative;
+}
+.top-header-largeScreen .subCourse {
+  position: absolute;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  box-shadow: 0px 2px 5px 0px rgb(0, 0, 0, 0.16);
+  /*zvisibility: hidden;
+    opacity: 0;
+    z-index: 100;*/
+  display: none;
+}
+.top-header-largeScreen .subCourse a {
+  padding: 0.75rem;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s all;
+}
+.top-header-largeScreen .subCourse a:hover {
+  background-color: #46b2f0;
+}
+/*.top-header-largeScreen .course:hover .subCourse{
+  visibility: visible;
+  opacity: 1;
+}*/
+/*conyent*/
+.content {
+  background-color: #ededee;
+  margin-top: 120px;
+}
+.content .card {
+  margin-top: 1rem;
+}
+.content .detail-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.paginate {
+  background-color: #ededee;
+}
+.paginate .pagination {
+  margin: 5px 0px;
+  direction: ltr;
+}
+.paginate .paginate-container {
+  background-color: #fff;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+.footer {
+  background-color: #46b2f0;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+  .search-box .form-group {
+    width: 50%;
+    margin: auto;
+  }
+  .search-box .form-group img {
+    right: 27%;
+    top: 25px;
+  }
+}

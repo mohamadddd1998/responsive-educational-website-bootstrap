@@ -1,0 +1,87 @@
+@import "variables.scss";
+@font-face {
+  font-family: "Iranian Sans";
+  font-weight: $font-weight;
+  src: url("../font/Iranian\ Sans.ttf");
+}
+body {
+  font-family: "Iranian Sans" !important;
+  font-weight: $font-weight;
+  text-align: right;
+  direction: rtl;
+  font-size: $font-size;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
+  font-family: "Iranian Sans" !important;
+}
+/*scroll setting*/
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #afb6af;
+}
+/*header styles*/
+.top-header {
+  nav {
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 0px $padding * 3;
+    }
+  }
+  .nameSite {
+    a {
+      img {
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+  }
+  .course {
+    position: relative;
+  }
+  .subCourse {
+    position: absolute !important;
+    width: 200px;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: $box-shadow;
+    top: 60px;
+    right: 100px;
+    opacity: 0;
+    visibility: hidden;
+    li {
+      list-style: none;
+      padding: 10px;
+      transition: 0.2s all;
+    }
+    li:hover {
+      background-color: $primary;
+    }
+    .course {
+      display: none;
+    }
+  }
+}
